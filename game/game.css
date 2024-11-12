@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+button{
+    background-color: aquamarine;
+    padding: 15px 35px;
+    color: red;
+    border-radius: 10px;
+}
+
+.scores,
+.result{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.winner{
+    font-weight: bold;
+    margin-top: 25px;
+    color: blueviolet;
+}
+
+h1{
+    color: blueviolet;
+}
+
+p{
+    margin: 5px;
+    font-size: 25px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <p>choose "rock", "paper", or ,"Scissors" below and click Enter</p>
+     <div class="main">
+        <div>
+            <input type="radio" id="game" name="game">
+            <label for="Rock">Rock</label>
+        </div>
+
+        <div>
+            <input type="radio" id="game" name="game">
+            <label for="paper">Paper</label>
+        </div>
+
+        <div>
+            <input type="radio" id="game" name="game">
+            <label for="Scissors">Scissors</label>
+        </div>
+
+      </div>
+
+       <button id="Enter">Enter</button>
+
+        <div class="scores">
+              <p>User Score: <Score:span id="userScore">0</Score:span></p>
+              <p>Computer Score: <span id="computerScore">0</span></p>
+        </div>
+
+        <div class="result">
+              <p id="roundResult"></p>
+              <p id="winner"></p>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html> 
