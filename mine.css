@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    /* width: 90% */
+    font-family:'Times New Roman', Times, serif;
+    background-color: lightgrey;
+ }
+
+.start{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height:90vh;
+    display: flex;
+    align-content: center;
+    gap: 5rem;
+    justify-content: space-between; 
+ }
+ .break{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+ }
+ .break hr {
+    border: 1px solid gray;
+    width: 100%;
+ }
+.show{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-left: 75px;
+    }
+h1{
+    color: blue;
+    }
+.helps{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+.continue{
+    margin-top: 80px; 
+    width: 700px;
+    height: 100vh;
+    margin-bottom: 80px;
+ }
+.more{
+  width:70%;
+  background-color: white; 
+  border-radius:7px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+input :hover{
+    color: lightblue;
+}
+input[type="text"]{
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 15px 20px;
+    margin:15px  10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+   input[type="password"]{
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 15px 20px;
+    margin:15px 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+    border: 2px solid rgb(93, 93, 173);
+}
+.button{
+    color: white;
+    text-align: center;
+    display:block;
+    font-size: 15px;
+    margin: auto;
+    background-color: blue;
+    padding: 15px 120px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-weight: bold;
+ }
+.sort{
+    text-align: center;
+    background-color: forestgreen;
+    display: block;
+    padding: 15px 15px;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+    width:250px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+} 
+.end{
+    font-size: 20px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.new{
+    font-weight: 300px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 120px;
+    width:70%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+span{
+    font-weight: bolder;
+}
