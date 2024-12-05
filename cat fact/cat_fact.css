@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    text-align: center;
+    margin: auto 0;
+    padding-top: 200px;
+    width: 100%;
+}
+
+#generate{
+    width: 150px;
+    height: 50px;
+    background-color: blanchedalmond;
+    color: red;
+
+}
+
+#generate:hover{
+    background-color: green;
+    color: aqua;
+}

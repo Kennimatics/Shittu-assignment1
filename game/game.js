@@ -2,37 +2,34 @@ let userScore = 0;
 computerScore = 0;
 roundCount = 0;
 const MaxRounds = 5;
+
+
+
 function getComputerChoice() {
        const choices = ["rock","paper","scissors"];
        return
        choices[Math.floor(Math.random() * 3)];
 }
 
-function playGame() {
-       document.getElementById("game");
-       const getComputerChoice = getComputerChoice();
-}
 
 const resultDisplay = document.getElementById("roundResult");
 const userScoreDisplay = document.getElementById("userScore");
 const computerScoreDisplay = document.getElementById("computerScore");
 const winnerDisplay = document.getElementById("winner");
 
-function determineWinner(userChoice,computerChoice){
-       if (userChoice ===computerChoice)
-               return "it's a draw!"
 
-       if (
-       (userChoice === "scissors" && computerChoice === "rock") || (userChoice === "rock" && computerChoice === "paper") || (userChoice === "paper" && computerChoice === "scissors")
-       ){
-          return "computer"    
-       }  else{
-              return "user"
+function playGame() {
+       document.getElementsByClassName("game");
+       const selectedOption =  document.querySelector('input[name="game"]:checked');
+       if (selectedOption)  {
+              alert("please pick your choice");
+              return;
        }
-}
 
-const winner =
-determineWinner(userChoice,computerChoice); {
+       const userChoice = selectedOption.value;
+       const getComputerChoice = getComputerChoice();
+
+       const winner = determineWinner(userChoice, computerChoice); 
    roundCount++;
 
    if (winner === "computer") {
@@ -41,13 +38,39 @@ determineWinner(userChoice,computerChoice); {
 
    } else if (winner === "user") {
        user++;
+
        resultDisplay.textContent = "you won this round! you picked${userchoice},  computer picked${computerChoice.}"
-   }   else {
+   }  
+    else {
+
        resultDisplay.textContent = "it's a draw! both picked${userChoice}"
    }
+}
 
-     userScoreDisplay.textContent = userScore;
-     computerScoreDisplay.textContent = computerScore;
+
+
+function determineWinner(userChoice, computerChoice){ 
+       if (userChoice === computerChoice)
+               return "it's a draw!"
+
+       if (
+       (userChoice === "scissors" && computerChoice === "rock") || 
+       (userChoice === "rock" && computerChoice === "paper") ||
+        (userChoice === "paper" && computerChoice === "scissors")
+       
+       
+       )  {
+          return "computer"
+
+       }  else{
+
+              return "user"
+       }
+}
+
+
+    userScoreDisplay.textContent = userScore;
+    computerScoreDisplay.textContent = computerScore;
 
      if (roundCount === MaxRounds) {
        if (computerScore > userScore) {
@@ -57,7 +80,10 @@ determineWinner(userChoice,computerChoice); {
  } else{
        winnerDisplay.textContent = "No winner! it's a draw."
  }
-}
-document.getElementById("playButton").disabled = true;
 
-document.getElementById("playButton").addEventListener("enter", playGame)
+ 
+   document.getElementById("enter").disabled = true;
+
+}
+
+document.getElementById("enter").addEventListener("click", playGame);
